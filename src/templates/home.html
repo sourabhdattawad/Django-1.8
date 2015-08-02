@@ -1,0 +1,119 @@
+{% include 'material/includes/material_css.html' %}
+{% include 'material/includes/material_js.html' %}
+{% load material_form %} 
+{% load staticfiles %}
+
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<nav>
+  <ul id="slide-out" class="side-nav"><div class="card-panel teal lighten-2">
+   <li><a href="/home/" class="waves-effect waves-yellow">Home</a></li>
+   
+    <li><a href="/project/"class="waves-effect waves-green">My Projects</a></li>
+    <li><a href=""class="waves-effect waves-orange">Resume</a></li>
+     <li><a href="/contact/"class="waves-effect waves-red">Let's Talk</a></li>
+    <li class="no-padding">
+      <!-- <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Dropdown<i class="mdi-navigation-arrow-drop-down"></i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#!">First</a></li>
+              <li><a href="#!">Second</a></li>
+              <li><a href="#!">Third</a></li>
+              <li><a href="#!">Fourth</a></li>
+            </ul> -->
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="left hide-on-med-and-down">
+    <li><a href="/home/" class="waves-effect waves-yellow">Home</a></li>
+    <li><a href="/project/"class="waves-effect waves-green">My Projects</a></li>
+    <li><a href=""class="waves-effect waves-orange">Resume</a></li>
+    <li><a href="/contact/"class="waves-effect waves-red">Let's Talk</a></li>
+    <!-- <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+    <ul id='dropdown1' class='dropdown-content'>
+      <li><a href="#!">First</a></li>
+      <li><a href="#!">Second</a></li>
+      <li><a href="#!">Third</a></li>
+      <li><a href="#!">Fourth</a></li>
+    </ul> -->
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+</nav>
+<div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="{% static 'img/white.jpg'%}" width="100" height="100">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">About Website<i class="material-icons right">more_vert</i></span>
+      <p><i class="material-icons">code</i></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">About Website<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+
+    <!-- <form  method="POST" action="" > {% csrf_token %}
+<div class='form-group form-group-lg'>
+{% csrf_token %}
+        {% form  %}{% endform %}
+<link href='http://fonts.googleapis.com/css?family=Englebert' rel='stylesheet' type='text/css'>
+<div class="input-group" >
+<!-- <input class='form-control' type="email" name="email" placeholder="Your email..." /> -->
+<!--span class='input-group-btn'>
+<input type='submit' value='Subscribe' class='btn btn-primary btn-lg' />
+</span>
+</div>
+</div>
+</form>
+<div class="row">
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span><form  method="POST" action="" > {% csrf_token %}
+<div class='form-group form-group-lg'>
+{% csrf_token %}
+        {% form  %}{% endform %}
+<link href='http://fonts.googleapis.com/css?family=Englebert' rel='stylesheet' type='text/css'>
+<div class="input-group" >
+<!-- <input class='form-control' type="email" name="email" placeholder="Your email..." /> -->
+<!--span class='input-group-btn'>
+<input type='submit' value='Subscribe' class='btn btn-primary btn-lg' />
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+ -->
+ <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="{% static 'img/white.jpg'%}" width="100" height="250">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">About Me<i class="material-icons right">more_vert</i></span>
+      <p><i class="material-icons">code</i></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">About Me<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+  <footer class="page-footer">
+          
+          
+            <div class="container">
+              <center>
+           <a class = "grey-text text-lighten-5"> © 2015 Copyright SourabhDattawad</a>
+           </center>
+            <!-- <a class="grey-text text-lighten-5 right" href="#!">More Links</a> -->
+            </div>
+          </div>
+        </footer>
+            

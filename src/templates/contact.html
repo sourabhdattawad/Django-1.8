@@ -1,0 +1,111 @@
+{% include 'material/includes/material_css.html' %}
+{% include 'material/includes/material_js.html' %}
+{% load material_form %} 
+{% load staticfiles %}
+<html>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<nav>
+  <ul id="slide-out" class="side-nav"><div class="card-panel teal lighten-2">
+    <li><a href="/home/" class="waves-effect waves-yellow">Home</a></li>
+    <li><a href="/project/"class="waves-effect waves-green">My Projects</a></li>
+    <li><a href=""class="waves-effect waves-orange">Resume</a></li>
+    <li><a href="/contact/"class="waves-effect waves-red">Let's Talk</a></li>
+    <li class="no-padding">
+      <!-- <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Dropdown<i class="mdi-navigation-arrow-drop-down"></i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#!">First</a></li>
+              <li><a href="#!">Second</a></li>
+              <li><a href="#!">Third</a></li>
+              <li><a href="#!">Fourth</a></li>
+            </ul> -->
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="left hide-on-med-and-down">
+    <li><a href="/home/" class="waves-effect waves-yellow">Home</a></li>
+    <li><a href="/project/"class="waves-effect waves-green">My Projects</a></li>
+    <li><a href=""class="waves-effect waves-orange">Resume</a></li>
+    <li><a href="/contact/"class="waves-effect waves-red">Let's Talk</a></li>
+    <!-- <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+    <ul id='dropdown1' class='dropdown-content'>
+      <li><a href="#!">First</a></li>
+      <li><a href="#!">Second</a></li>
+      <li><a href="#!">Third</a></li>
+      <li><a href="#!">Fourth</a></li>
+    </ul> -->
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+</nav>
+<div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="{% static 'img/white.jpg'%}" width="100" height="100">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">My Profiles<i class="material-icons right">more_vert</i></span>
+      <p><i class="material-icons">code</i></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">My Profiles<i class="material-icons right">close</i></span>
+      <a href="https://www.facebook.com/sourabh.dattawad" target="_blank">
+          <i class="fa fa-facebook-square fa-4x" style="color:#3b5998"></i>
+      </a>
+      <!--a href="https://twitter.com/home?status=Gotcha!%20I%20found%20something%20awesome!{{ ref_url }}" target="_blank">
+      <i class="fa fa-twitter-square fa-4x" style="color:#4099FF"></i>
+      </a-->
+      <a href="https://www.linkedin.com/profile/view?id=351375708&trk=nav_responsive_tab_profile" target="_blank">
+      <i class="fa fa-linkedin-square fa-4x" style="color:#007bb6"></i>
+      </a>
+      <!-- <a href="http://www.reddit.com/submit?url={{ ref_url }}&title=Gotcha!%20I%20found%20something%20awesome!" target="_blank"> -->
+      <!-- <i class="fa fa-reddit-square fa-4x" style="color:#900020"></i> -->
+      </a>
+      <a href='https://plus.google.com/117252882898963750087/posts' target="_blank">
+      <i class="fa fa-google-plus-square fa-4x" style="color:#D34836"></i>
+      </a>
+      <a href='https://github.com/sourabhdattawad' target="_blank">
+      <i class="fa fa-github-square fa-4x" style="color:black "></i></a>
+    </div>
+  </div>
+
+<p align="center">
+
+</p>
+
+<div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="{% static 'img/white.jpg'%}" width="100" height="200">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Contact Form<i class="material-icons right">more_vert</i></span>
+      <p><i class="material-icons">code</i></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Contact Form<i class="material-icons right">close</i></span>
+      <form method="POST" >
+
+        {% csrf_token %}
+        {% form form=form %}{% endform %}
+<center>
+<button class="btn waves-effect waves-light " type="submit"onclick="Materialize.toast('Submitting...Thank you! Catch you soon.', 10000,'rounded')" >SUBMIT
+</button>
+</center>    
+</form>
+    </div>
+  </div>
+<footer class="page-footer">
+          
+          
+            <div class="container">
+              <center>
+           <a class = "grey-text text-lighten-5"> © 2015 Copyright SourabhDattawad</a>
+           </center>
+            <!-- <a class="grey-text text-lighten-5 right" href="#!">More Links</a> -->
+            </div>
+          </div>
+        </footer>
+</html>            
