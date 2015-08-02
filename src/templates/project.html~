@@ -116,7 +116,7 @@
     </div>
     <div class="card-reveal"><ul class="collapsible popout z-depth-5" data-collapsible="accordion">
     <li>
-      <div class="collapsible-header "><i class="material-icons">code</i>Lorem ipsum dolor sit amet.</div>
+      <div class="collapsible-header "><i class="material-icons">code</i>Django Web Application</div>
       <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
     </li>
     <li>
